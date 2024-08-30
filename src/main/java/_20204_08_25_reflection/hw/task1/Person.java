@@ -1,6 +1,11 @@
 package _20204_08_25_reflection.hw.task1;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.ToString;
+
+import java.io.Serializable;
 
 /**
  * 1 Создайте класс с 10 методами и 4 приватными полями. Геттеры и сеттеры добавлять не
@@ -11,6 +16,9 @@ import lombok.AllArgsConstructor;
  * значение и устанавливает его новым значением этого поля
  */
 @AllArgsConstructor
+@ToString
+@JsonSerialize
+@Getter
 public class Person {
     private String mnimus;
     private int qnimus;

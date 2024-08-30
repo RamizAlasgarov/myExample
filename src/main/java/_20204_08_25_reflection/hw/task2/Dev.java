@@ -1,10 +1,16 @@
 package _20204_08_25_reflection.hw.task2;
 
 import _20204_08_25_reflection.hw.task1.Person;
+import com.fasterxml.jackson.core.exc.StreamWriteException;
+import com.fasterxml.jackson.databind.DatabindException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.nio.file.Path;
+import java.util.regex.Pattern;
 
 /**
  * 2 Создайте собственный класс, который будет сериализовать объект из задания 1 в JSON.
@@ -13,14 +19,12 @@ import java.io.ObjectOutputStream;
  */
 public class Dev {
     public static void main(String[] args) {
+        Person person = new Person("kkk", 22, true, 3.14);
+        ObjectMapper objectMapper = new ObjectMapper();
         try {
-            ObjectOutputStream objectOutputStream =
-                    new ObjectOutputStream(new FileOutputStream("Person.json"));
-            Person person = new Person("person",22,true,3.14);
-            objectOutputStream.writeObject(person);
+                 objectMapper.writeValue(Path.of("person.json").toFile(), person);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 }

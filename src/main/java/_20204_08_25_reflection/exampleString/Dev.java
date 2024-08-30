@@ -29,7 +29,7 @@ public class Dev {
 
         System.out.println(cls.getSuperclass());
         System.out.println(cls.getSuperclass().getSuperclass());
-        List<String> list = Arrays.stream(cls.getInterfaces()).map(e->e.getSimpleName()).collect(Collectors.toList());
+        List<String> list = Arrays.stream(cls.getInterfaces()).map(e->e.getSimpleName()).toList();
         System.out.println(list);
     }
 }

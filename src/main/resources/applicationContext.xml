@@ -9,12 +9,12 @@
 
 <bean
     id = "myPet"
-    class="myExamples.myExample.Cat">
+    class="myExamples___________.myExample.Cat">
 </bean>
 
     <bean
         id = "myPerson"
-        class="myExamples.myExample.Person">
+        class="myExamples___________.myExample.Person">
         <property name="animal" ref="myPet">
 
         </property>

@@ -7,6 +7,6 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="myExample5"/>
+    <context:component-scan base-package="myExamples___________.myExample5"/>
     <context:property-placeholder location="classpath:myApp.properties"/>
 </beans>

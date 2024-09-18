@@ -1,9 +1,8 @@
-package _20204_08_25_reflection.exampleString;
+package _2024_08_25_reflection.exampleString;
 
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Исследуйте класс String. Выведите в консоль

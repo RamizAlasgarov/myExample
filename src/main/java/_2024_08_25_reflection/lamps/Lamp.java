@@ -1,4 +1,4 @@
-package _20204_08_25_reflection.lamps;
+package _2024_08_25_reflection.lamps;
 
 /**
  *  * 2.электрическая лампа (потребляемая мощность, тип цоколя)

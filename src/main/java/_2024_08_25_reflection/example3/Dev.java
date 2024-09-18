@@ -1,6 +1,5 @@
-package _20204_08_25_reflection.example3;
+package _2024_08_25_reflection.example3;
 
-import java.lang.reflect.Member;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;

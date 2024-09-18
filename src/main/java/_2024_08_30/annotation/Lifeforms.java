@@ -1,7 +1,5 @@
 package _2024_08_30.annotation;
 
-import _20204_08_25_reflection.lamps.Type;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -1,4 +1,4 @@
-package _20204_08_25_reflection.lamps;
+package _2024_08_25_reflection.lamps;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
